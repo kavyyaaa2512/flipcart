@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header class = "navbar">
+        <div class = "logo">
+            <img src="Images/flipkart logo.svg" alt="Flipkart Logo">
+        </div>
+        <div class = "search-bar">
+            <input type="text" placeholder="Search for Products Brands and More">
+        </div>
+        <div class = "nav-links">
+            <div class = "nav-item">
+                <img src="Images/Login.svg" alt="">
+                <a href="#" style="color : black; text-decoration: none;">Login</a>
+            </div>
+            <div class = "nav-item">
+                <img src="Images/cart.svg" alt="">
+                <a href="#" style="color : black; text-decoration: none;">Cart</a>
+            </div>
+            <div class = "nav-item">
+                <img src="Images/Become Seller.svg" alt="">
+                <a href="#" style="color : black; text-decoration: none;">Become a Seller</a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="category-bar">
+        <div class="category">
+            <img src="Images/kilo.webp" alt="">
+            <span>Kilos</span>
+        </div>
+        <div class="category">
+            <img src="Images/Mobiles.webp" alt="">
+            <span>Mobiles</span>
+        </div>
+        <div class="category">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/96/96/image/0d75b34f7d8fbcb3.png?q=100" alt="">
+            <span>Fashion ▼</span>
+            <ul class="dropdown">
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Kids</a></li>
+            </ul>
+        </div>
+        <div class="category">
+            <img src="https://rukminim2.flixcart.com/flap/96/96/image/69c6589653afdb9a.png?q=100" alt="">
+            <span>Electronics ▼</span>
+            <ul class="dropdown">
+                <li><a href="#">Laptops</a></li>
+                <li><a href="#">Cameras</a></li>
+                <li><a href="#">Headphones</a></li>
+            </ul>
+        </div>
+        <div class="category">
+            <img src="https://rukminim2.flixcart.com/flap/96/96/image/ab7e2b022a4587dd.jpg?q=100" alt="">
+            <span>Home & Furniture ▼</span>
+            <ul class="dropdown">
+                <li><a href="#">Sofas</a></li>
+                <li><a href="#">Beds</a></li>
+                <li><a href="#">Tables</a></li>
+            </ul>
+        </div>
+        <div class="category">
+            <img src="Images/Appliances.webp" alt="">
+            <span>Appliances</span>
+        </div>
+        <div class="category">
+            <img src="Images/Flight.webp" alt="">
+            <span>Flight Bookings</span>
+        </div>
+        <div class="category">
+            <img src="https://rukminim2.flixcart.com/flap/96/96/image/dff3f7adcf3a90c6.png?q=100" alt="">
+            <span>Beauty, Toys & More ▼</span>
+            <ul class="dropdown">
+                <li><a href="#">Makeup</a></li>
+                <li><a href="#">Toys</a></li>
+                <li><a href="#">Grooming</a></li>
+            </ul>
+        </div>
+        <div class="category">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/96/96/image/05d708653beff580.png?q=100" alt="">
+            <span>Two Wheelers ▼</span>
+            <ul class="dropdown">
+                <li><a href="#">Bikes</a></li>
+                <li><a href="#">Scooters</a></li>
+                <li><a href="#">Accessories</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="slideshow-container">
+        <div class="slide-track">
+            <div class="slide"><img src="Images/Slideshow Image 1.webp" alt="Slide 1"></div>
+            <div class="slide"><img src="Images/Slideshow Image 2.webp" alt="Slide 2"></div>
+            <div class="slide"><img src="Images/Slideshow Image 3.webp" alt="Slide 3"></div>
+            <div class="slide"><img src="Images/Slideshow Image 4.webp" alt="Slide 4"></div>
+            <div class="slide"><img src="Images/Slideshow Image 5.webp" alt="Slide 5"></div>
+            <div class="slide"><img src="Images/Slideshow Image 6.webp" alt="Slide 6"></div>
+            <div class="slide"><img src="Images/Slideshow Image 7.webp" alt="Slide 7"></div>
+            <div class="slide"><img src="Images/Slideshow Image 8.webp" alt="Slide 8"></div>
+        </div>
+
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+
+    </div>    
+
+    <div class="dots">
+        <span class="dot" onclick="jumpToSlide(0)"></span>
+        <span class="dot" onclick="jumpToSlide(1)"></span>
+        <span class="dot" onclick="jumpToSlide(2)"></span>
+        <span class="dot" onclick="jumpToSlide(3)"></span>
+        <span class="dot" onclick="jumpToSlide(4)"></span>
+        <span class="dot" onclick="jumpToSlide(5)"></span>
+        <span class="dot" onclick="jumpToSlide(6)"></span>
+        <span class="dot" onclick="jumpToSlide(7)"></span>
+    </div>
+
+    <div class="products">
+        <h2>499 Only</h2>
+        <div class="products-container">
+            <div class="product">
+                <img src="Images/499 Image 1.PNG" alt="Men's Shirt">
+                <p>T-Shirts, Shirts, Jeans...</p>
+                <p class="price">Under ₹499</p>
+            </div>
+            <div class="product">
+                <img src="Images/499 Image 2.PNG" alt="Shoes">
+                <p>Top Offers</p>
+                <p class="price">Under ₹499</p>
+            </div>
+            <div class="product">
+                <img src="Images/499 Image 3.PNG" alt="Saree">
+                <p>Bestselling Sarees</p>
+                <p class="price">Under ₹499</p>
+            </div>
+            <div class="product">
+                <img src="Images/499 Image 4.PNG" alt="Shoes">
+                <p>Reebok, HRX...</p>
+                <p class="price">Min. 70% Off</p>
+            </div>
+            <div class="product">
+                <img src="Images/499 Image 5.PNG" alt="Dress">
+                <p>Tokyo Talkies, Sassa</p>
+                <p class="price">Under ₹499</p>
+            </div>
+            <div class="product">
+                <img src="Images/499 Image 6.PNG" alt="Dress">
+                <p>Trendy Handbags</p>
+                <p class="price">Under ₹499</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="products">
+        <h2>Best Deals on Smartphones</h2>
+        <div class="products-container">
+            <div class="product">
+                <img src="Images/Phone Image 1.PNG" alt="Men's Shirt">
+                <p>Motorola Edge 50</p>
+                <p class="price">Just ₹20,999*</p>
+            </div>
+            <div class="product">
+                <img src="Images/Phone Image 2.PNG" alt="Shoes">
+                <p>Vivo T3 5G</p>
+                <p class="price">From ₹16,999*</p>
+            </div>
+            <div class="product">
+                <img src="Images/Phone Image 3.PNG" alt="Saree">
+                <p>CMF Phone</p>
+                <p class="price">Just ₹12,999*</p>
+            </div>
+            <div class="product">
+                <img src="Images/Phone Image 4.PNG" alt="Shoes">
+                <p>Moto G35 5G</p>
+                <p class="price">From ₹9,999*</p>
+            </div>
+            <div class="product">
+                <img src="Images/Phone Image 5.PNG" alt="Dress">
+                <p>Moto G64 5G</p>
+                <p class="price">Just ₹12,999*</p>
+            </div>
+            <div class="product">
+                <img src="Images/Phone Image 6.PNG" alt="Dress">
+                <p>Nothing Phone 2A</p>
+                <p class="price">From ₹12,999*</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="brand-directory">
+        <h2>Top Stories : Brand Directory</h2>
+        <div class="brand-list">
+            <p><strong>MOST SEARCHED FOR ON FLIPKART:</strong> Mobile | POCO M7 | Nothing Phone 3a | iPhone 16 | SAMSUNG Galaxy S25 Ultra | iPhone 16 Pro | vivo V50 | OPPO Reno13 Pro | POCO X7 | Infinix Note 40 Pro 5G | iPhone 15 | OnePlus Nord CE 3 Lite 5G | Spoil Store | Samsung Fold5 | Flipkart Axis Bank Super Elite Credit Card | Primebook Laptops | Moto Edge 40 | Grievance Redressal</p>
+            <p><strong>MOBILES:</strong> Motorola g64 5G | OPPO Reno 12 | Moto Edge 50 Fusion | REDMI Note 14 Pro+ 5G | Samsung Galaxy S23 | Realme 10 Pro 5G | Motorola G62 5G | Nokia Mobile | Oppo Mobile | Vivo Mobile</p>
+            <p><strong>CAMERA:</strong> GoPro Action Camera | Nikon Camera | Canon DSLR | Sony Camera | Nikon DSLR</p>
+            <p><strong>LAPTOPS:</strong> Asus ROG Ally | MacBook Pro M2 | Premium Laptop | ASUS ROG Zephyrus M16 | HP Laptops | Gaming Laptops</p>
+            <p><strong>TVS:</strong> Nokia TV | Panasonic TV | Samsung TV | LG TV | Android Television</p>
+            <p><strong>LARGE APPLIANCES:</strong> Refrigerators | Air Conditioners | Electric Cookers | Washing Machines | Microwave Ovens</p>
+            <p><strong>CLOTHING:</strong> Sarees | Green bridal lehenga | Tops | Apron for Doctors | Shoes | Sunglasses | Bridal Blouse | Half saree blouse designs | Designer blouses | Blouse designs | Shirts | Cotton saree blouse designs | T-shirts | Jeans | Dresses | One pieces | Groom wedding sherwani | Designer Salwar Suits | Bra | Cotton simple blouse designs | Banarasi saree blouse designs | Stylish blouse astin design | Track Pant | Blouse neck designs | Kurtas | Party Dresses | Palazzo Suits | Anarkali | Gowns | Cut out dress | Salwar Suits | Kurtis | Designer Sarees | Leggings | Shorts | Georgette Sarees | Ethnic Wear | Uppada pattu sarees | Blouse back design | Jodhpuri pants</p>
+            <p><strong>FOOTWEAR</strong>Adidas Shoes | Reebok Shoes | Nike Shoes | Puma Shoes | Boots | Bata Shoes | Woodland Shoes | Skechers Shoes | Sneakers | Womens Boots | Sports Shoes | Loafers | Sandals | Lotto Sports Shoes | Casual Shoes | Womens Skechers Shoes | Asics Shoes | Formal Shoes | School Shoes</p>
+            <p><strong>GROCERIES</strong>PhonePe Grocery Voucher | Hand Wash | Soap | Cashew Nuts | Sunflower Oil | Eggs | Toilet Cleaner | Harpic Toilet Cleaner | Dettol Soap | Mustard Oil | Biscuits | Cheese | Patanjali Atta | Fortune Oil | Aashirvaad Atta | Tea</p>
+            <p><strong>BEST SELLING ON FLIPKART</strong>Headphones | Best Gas Geyser | Kitchen Geyser | Nutri Blenders | Portable Air Cooler | Best Air Cooler | Bags | Hitachi Refrigerator 3 Door | Books | Toys | Candles | Helmets | Wall Clocks | Baby Food | Chocolates | Cycles | Calculators | Lipsticks | Mask | Vertiv UPS | Fastrack Watches | Wallets | Earrings | Gold Coins | Realme Pad Mini | Handbags | Conekt SW2 Smartwatch | Mivi DuoPods a350 | Speaker Cleaner</p>
+            <p><strong>FURNITURE</strong>Furniture | Sofas | Beds | Dining sets | Wardrobes | Mattresses | TV Units | Tables | Chairs | Shelves | Bean Bags | Office Chairs | Computer Table | Office Tables | Red Sofa | Wakefit Beds | White Sofa | Wakefit Mattresses | Green Sofa | Black Sofa | Brown Sofa</p>
+            <p><strong>BGMH (Beauty, Grocery, Medical, and Health)</strong>Shampoo | Whey Protein | Homeopathy | Cricket | Cycles | Footballs | Treadmills | Christmas Gifts | Fitness Accessories | Online Guitar | Books Store | Musical Instrument Store | Dabur Chyawanprash | Baidyanath Chyawanprash | Energy Drinks | Toys | Milk Drink Mixes | Chyawanprash | Indian Flag | Protein Supplements
+            </p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>ABOUT</h4>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Flipkart Stories</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Corporate Information</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>GROUP COMPANIES</h4>
+                <ul>
+                    <li><a href="#">Myntra</a></li>
+                    <li><a href="#">Cleartrip</a></li>
+                    <li><a href="#">Shopsy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>HELP</h4>
+                <ul>
+                    <li><a href="#">Payments</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Cancellation & Returns</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>CONSUMER POLICY</h4>
+                <ul>
+                    <li><a href="#">Cancellation & Returns</a></li>
+                    <li><a href="#">Terms Of Use</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Grievance Redressal</a></li>
+                    <li><a href="#">EPR Compliance</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Mail Us:</h4>
+                <p>Flipkart Internet Private Limited, Buildings Alyssa, Begonia & Clove Embassy Tech Village, Outer Ring Road, Bengaluru, 560103, Karnataka, India</p>
+                <h4>Registered Office Address:</h4>
+                <p>Flipkart Internet Private Limited, Buildings Alyssa, Begonia & Clove Embassy Tech Village, Outer Ring Road, Bengaluru, 560103, Karnataka, India</p>
+                <p>CIN: U51109KA2012PTC066107</p>
+                <p>Telephone: <a href="tel:04445614700">044-45614700</a> / <a href="tel:04467415800">044-67415800</a></p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-links">
+                <a href="#">Become a Seller</a>
+                <a href="#">Advertise</a>
+                <a href="#">Gift Cards</a>
+                <a href="#">Help Center</a>
+                <a href="#">© 2025 Flipkart.com</a>
+            </div>
+            <div class="footer-payments">
+                <img src="Visa.png" alt="Visa">
+                <img src="mastercard.png" alt="Mastercard">
+                <img src="rupay.png" alt="RuPay">
+                <img src="net-banking.png" alt="Net Banking">
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
